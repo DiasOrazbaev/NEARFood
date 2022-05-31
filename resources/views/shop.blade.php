@@ -20,9 +20,9 @@
                         @endif
                         @if($shop->categories->count())
                             <div class="geodir-single-taxonomies-container">
-                                <p class="geodir_post_taxomomies clearfix"> 
+                                <p class="geodir_post_taxomomies clearfix">
                                     <span class="geodir-category">
-                                        Categories: 
+                                        Categories:
                                         @foreach($shop->categories as $category)
                                             <a href="{{ route('home') }}?category={{ $category->id }}">{{ $category->name }}</a>{{ !$loop->last ? ',' : ''  }}
                                         @endforeach
